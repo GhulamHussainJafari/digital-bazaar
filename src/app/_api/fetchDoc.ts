@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies'
 
 import type { Config } from '../../payload/payload-types'
@@ -20,6 +21,7 @@ const queryMap = {
     query: ORDER,
     key: 'Orders',
   },
+
 }
 
 export const fetchDoc = async <T>(args: {

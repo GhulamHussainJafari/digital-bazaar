@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import type { Field } from 'payload/types'
 
 import linkGroup from './linkGroup'
@@ -33,6 +34,10 @@ export const hero: Field = {
           label: 'Low Impact',
           value: 'lowImpact',
         },
+        {
+          label: 'Custom Hero',
+          value: 'customHero',
+        },
       ],
     },
     richText({
@@ -52,7 +57,8 @@ export const hero: Field = {
       relationTo: 'media',
       required: true,
       admin: {
-        condition: (_, { type } = {}) => ['highImpact', 'mediumImpact'].includes(type),
+        condition: (_, { type } = {}) =>
+          ['highImpact', 'mediumImpact', 'customHero'].includes(type),
       },
     },
   ],

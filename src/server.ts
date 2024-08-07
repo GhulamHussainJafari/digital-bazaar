@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import dotenv from 'dotenv'
 import next from 'next'
 import nextBuild from 'next/dist/build'
