@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client'
 
 import React, { ElementType } from 'react'
@@ -16,7 +17,7 @@ export type Props = {
   type?: 'submit' | 'button'
   disabled?: boolean
   invert?: boolean
-  children? : React.ReactNode
+  children?: React.ReactNode
 }
 
 export const Button: React.FC<Props> = ({

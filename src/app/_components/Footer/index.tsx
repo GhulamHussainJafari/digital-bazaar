@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import Link from 'next/link'
 
@@ -11,6 +12,7 @@ export async function Footer() {
   try {
     footer = await fetchFooter()
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.log(error)
   }
 

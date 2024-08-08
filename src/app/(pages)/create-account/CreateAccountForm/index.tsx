@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client'
 
 import React, { useCallback, useRef, useState } from 'react'
@@ -64,7 +65,7 @@ const CreateAccountForm: React.FC = () => {
         clearTimeout(timer)
         if (redirect) router.push(redirect as string)
         else router.push(`/`)
-      window.location.href = '/'
+        window.location.href = '/'
       } catch (_) {
         clearTimeout(timer)
         setError('There was an error with the credentials provided. Please try again.')

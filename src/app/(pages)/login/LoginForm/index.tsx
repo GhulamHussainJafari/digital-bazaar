@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client'
 
 import React, { useCallback, useRef } from 'react'
@@ -37,7 +38,7 @@ const LoginForm: React.FC = () => {
         await login(data)
         if (redirect?.current) router.push(redirect.current as string)
         else router.push('/')
-      window.location.href='/'
+        window.location.href = '/'
       } catch (_) {
         setError('There was an error with the credentials provided. Please try again.')
       }
@@ -47,7 +48,7 @@ const LoginForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-      
+
       <Message error={error} className={classes.message} />
       <Input
         name="email"
